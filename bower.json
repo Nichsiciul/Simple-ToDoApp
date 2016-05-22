@@ -1,0 +1,21 @@
+{
+  "name": "Simple-ToDoApp",
+  "homepage": "https://github.com/Nichsiciul/Simple-ToDoApp",
+  "authors": [
+    "Dejan Nichsici <nichsici.dejan@gmail.com>"
+  ],
+  "description": "ToDo app built with angularJS",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
+  }
+}

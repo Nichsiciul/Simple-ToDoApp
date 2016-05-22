@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="toDoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoApp</title>
+
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	
+	<style type="text/css">
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	  display: none !important;
+	}
+	</style>
+</head>
+<body>
+	<div class="container" ng-controller="appController">
+		<div class="row">
+			<h1>To Do Application</h1>
+			<h3>Simple app built in AngularJS, EmberJS, NodeJS and MongoDB</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" class="form-control" ng-model="newItemViewModel.name">
+			</div>
+			<span class="glyphicon glyphicon-chevron-down"></span>
+			<button class="btn btn-primary" ng-click="post()">Add</button>
+		</div>	
+		<div class="row" ng-cloak ng-repeat="item in list track by $index">
+			<input type="checkbox">
+			<span>{{item.name}}</span>
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>	
+</body>
+</html>
